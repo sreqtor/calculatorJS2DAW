@@ -1,0 +1,47 @@
+/* 5. I'm using a minimal CSS, you should improve it to look great.*/
+#display {
+    text-align: right;
+    width: 160px;
+    color: #fff;
+    background-color: #e24533;
+    overflow: hidden;
+    vertical-align: middle;
+    display: table-cell;
+    padding: 5px;
+}
+
+.calculator [type=button] {
+    width: 40px;
+    padding: 0;
+}
+
+
+.calculator {
+    margin: 10px;
+    text-align: center;
+    border: 3px solid #730662;
+    display: table;
+    background: radial-gradient(circle, #f07020 29%, #e24533 93%); 
+}
+
+#vaciar {
+    width: 160px;
+}
+
+input {
+    background: #e62143;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+}
+
+input:active {
+    border-bottom-style: none;
+    border-color: #dadada;
+}
+
+input:hover {
+    border-bottom-style: none;
+    border-color: #dadada;
+}

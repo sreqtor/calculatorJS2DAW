@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 6. this is not an seo-optimized head, you should improve it-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="calcutator">
+    <meta name="keywords" content="calculator, solve, operations">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self'">
+    <meta http-equiv="Content-Security-Policy" content="base-uri 'self'" />
+    <meta http-equiv="Content-Security-Policy" content="form-action 'none'" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="Requena-Torres-Sergio-ej21.css">
+    <script src="Requena-Torres-Sergio-ej21.js"></script>
+    <title>Calculator</title>
+
+</head>
+
+<body onload="startDisplay();" onkeyup="input();">
+
+    <div class="calculator">
+        <form action="#" method="get">
+            <p id="display">0</p>
+            <!--4. Some keys are missing; sure you can add extra functionalities-->
+            <p><input type="button" value="7" onclick="key('7');"><input type="button" value="8"
+                    onclick="key('8');"><input type="button" value="9" onclick="key('9');"><input type="button"
+                    value="/" onclick="op('/');"></p>
+            <p><input type="button" value="4" onclick="key('4');"><input type="button" value="5"
+                    onclick="key('5');"><input type="button" value="6" onclick="key('6');"><input type="button"
+                    value="*" onclick="op('*');"></p>
+            <p><input type="button" value="1" onclick="key('1');"><input type="button" value="2"
+                    onclick="key('2');"><input type="button" value="3" onclick="key('3');"><input type="button"
+                    value="-" onclick="op('-');"></p>
+            <p><input type="button" value="0" onclick="key('0');"><input type="button" value="."
+                    onclick="key('.');"><input type="button" value="=" onclick="solve();"><input type="button" value="+"
+                    onclick="op('+');"></p>
+            <p><input type="button" value="Vaciar" id="vaciar" onclick="window.location.reload();"></p>
+        </form>
+    </div>
+</body>
+
+</html>
